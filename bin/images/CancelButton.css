@@ -1,0 +1,19 @@
+#Cancel {
+    -fx-padding: 8 15 15 15;
+    -fx-background-insets: 0,0 0 5 0,0 0 6 0,0 0 7 0;
+    -fx-background-radius: 8;
+    -fx-background-color: linear-gradient(from 0% 93% to 0% 100%, #c02942 0%, #e34724 100%), #ff5e57, #f9a88b, radial-gradient(center 50% 50%, radius 100%, #ff8383, #d93a3a);
+    -fx-effect: dropshadow(gaussian, rgba(179, 55, 55, 0.75),4,0,0,1);
+    -fx-font-weight: bold;
+    -fx-font-size: 1.1em;
+    -fx-text-fill: rgb(0, 0, 0);
+}
+
+    #Cancel:hover {
+        -fx-background-color: linear-gradient(from 0% 93% to 0% 100%, #d93a3a 0%, #900c3f 100), #ff8383, #f27979, radial-gradient(center 50% 50%,radius 100%, #ffb3b3, #c02942);
+    }
+
+    #Cancel:pressed {
+        -fx-padding: 10 15 13 15;
+        -fx-background-insets: 2 0 0 0,2 0 3 0,2 0 4 0,2 0 5 0;
+    }

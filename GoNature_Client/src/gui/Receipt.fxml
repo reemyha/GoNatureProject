@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: F5F5F5; -fx-border-width: 6; -fx-border-radius: 30 30 30 30; -fx-border-color: #311906#311906; -fx-background-radius: 30 30 30 30;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="112.0" layoutY="157.0" text="ID:" />
+      <Label layoutX="112.0" layoutY="233.0" text="Email:" />
+      <Label layoutX="112.0" layoutY="193.0" text="Phone:" />
+      <Label fx:id="id" layoutX="193.0" layoutY="157.0" text="123456789">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></Label>
+      <Label fx:id="email" layoutX="193.0" layoutY="233.0" prefHeight="20.0" prefWidth="188.0" text="nana@mail.com">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></Label>
+      <Label fx:id="phone" layoutX="193.0" layoutY="193.0" text="054444444">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></Label>
+      <Line disable="true" endX="120.0" layoutX="228.0" layoutY="134.0" startX="-175.0" stroke="#d9d9d9" strokeWidth="0.7" />
+      <Line disable="true" endX="120.0" layoutX="228.0" layoutY="268.0" startX="-175.0" stroke="#d9d9d9" strokeWidth="0.7" />
+      <Label layoutX="110.0" layoutY="316.0" text="Park:" />
+      <Label layoutX="110.0" layoutY="346.0" text="Date:" />
+      <Label layoutX="110.0" layoutY="406.0" text="Type:" />
+      <Label layoutX="110.0" layoutY="376.0" text="Time:" />
+      <Line disable="true" endX="120.0" layoutX="226.0" layoutY="304.0" startX="-175.0" stroke="#d9d9d9" strokeWidth="0.7" />
+      <Line disable="true" endX="120.0" layoutX="226.0" layoutY="477.0" startX="-175.0" stroke="#d9d9d9" strokeWidth="0.7" />
+      <Label fx:id="park" layoutX="213.0" layoutY="316.0" text="ronen">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></Label>
+      <Label fx:id="date" layoutX="213.0" layoutY="346.0" text="2024-04-01">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></Label>
+      <Label fx:id="time" layoutX="213.0" layoutY="376.0" text="8:00">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></Label>
+      <Label fx:id="type" layoutX="213.0" layoutY="406.0" text="solo">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></Label>
+      <Label layoutX="110.0" layoutY="436.0" text="Visitors:" />
+      <Label fx:id="visitors" layoutX="213.0" layoutY="436.0" text="1">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></Label>
+      <Label fx:id="totalPrice" layoutX="212.0" layoutY="492.0" text="1000">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></Label>
+      <Line disable="true" endX="120.0" layoutX="226.0" layoutY="524.0" startX="-175.0" stroke="#d9d9d9" strokeWidth="0.7" />
+      <Text fill="#1e525b" layoutX="48.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thank you for your order">
+         <font>
+            <Font name="System Bold Italic" size="30.0" />
+         </font>
+      </Text>
+      <ImageView blendMode="COLOR_BURN" fitHeight="150.0" fitWidth="200.0" layoutX="100.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/200w.gif" />
+         </image>
+      </ImageView>
+      <Button id="sale" fx:id="ok" layoutX="142.0" layoutY="542.0" mnemonicParsing="false" onAction="#okBtn" prefHeight="36.0" prefWidth="108.0" stylesheets="@../images/LoginButton.css" text="ok">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Text fill="#128fa8" layoutX="91.0" layoutY="505.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total price" wrappingWidth="220.10302734375">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <Text fill="#128fa8" layoutX="81.0" layoutY="293.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Arrival information" wrappingWidth="220.10302734375">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text fill="#1e525b" layoutX="109.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Everthing looks fine," wrappingWidth="187.9999947542201">
+         <font>
+            <Font name="System Bold Italic" size="19.0" />
+         </font>
+      </Text>
+      <Text fill="#1e525b" layoutX="111.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="We will wait for you!" wrappingWidth="202.0">
+         <font>
+            <Font name="System Bold Italic" size="19.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="800.0" style="-fx-border-color: #311906#311906; -fx-border-width: 6;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane layoutY="2.0" prefHeight="576.0" prefWidth="255.0" style="-fx-background-color: #1e525b; -fx-background-radius: 30 0 0 30;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox alignment="TOP_CENTER" layoutX="-1.0" layoutY="169.0" prefHeight="291.0" prefWidth="255.0" spacing="10.0">
+               <children>
+                  <Button fx:id="newBooking" disable="true" mnemonicParsing="false" onAction="#newBookingBtn" prefHeight="36.0" prefWidth="255.0" style="-fx-background-color: dff9e8;" text="New Booking">
+                     <font>
+                        <Font name="System Bold Italic" size="17.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="myBooking" disable="true" mnemonicParsing="false" onAction="#myBookingBtn" prefHeight="36.0" prefWidth="255.0" style="-fx-background-color: dff9e8;" text="My Bookings">
+                     <font>
+                        <Font name="System Bold Italic" size="17.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="prices" disable="true" mnemonicParsing="false" onAction="#pricesBtn" prefHeight="36.0" prefWidth="255.0" style="-fx-background-color: dff9e8;" text="Prices">
+                     <font>
+                        <Font name="System Bold Italic" size="17.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="aboutUs" disable="true" mnemonicParsing="false" onAction="#aboutUsBtn" prefHeight="36.0" prefWidth="255.0" style="-fx-background-color: dff9e8;" text="About Us">
+                     <font>
+                        <Font name="System Bold Italic" size="17.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <Text fill="#dff9e8" layoutX="25.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Go Nature">
+               <font>
+                  <Font name="System Bold Italic" size="45.0" />
+               </font>
+            </Text>
+            <Button fx:id="logout" disable="true" layoutX="59.0" layoutY="485.0" mnemonicParsing="false" onAction="#logoutBtn" prefHeight="36.0" prefWidth="136.0" style="-fx-background-color: #FFC152; -fx-background-radius: 10 10 10 10;" text="Logout">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="87.0" fitWidth="130.0" layoutX="65.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/GoNatureLogoGB.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Separator layoutX="261.0" layoutY="99.0" opacity="0.5" prefHeight="5.0" prefWidth="385.0" style="-fx-background-color: #242633;" AnchorPane.leftAnchor="255.0" AnchorPane.rightAnchor="0.0" />
+      <Text fill="#1e525b" layoutX="320.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payment Method">
+         <font>
+            <Font name="System Bold Italic" size="44.0" />
+         </font>
+      </Text>
+      <Circle fill="#61a994" layoutX="459.0" layoutY="135.0" radius="20.0" stroke="WHITE" strokeType="INSIDE" />
+      <Line endX="63.0" endY="-0.9999961853027344" layoutX="505.0" layoutY="136.0" startX="-25.0" startY="-0.9999961853027344" stroke="#1e525b" />
+      <Text layoutX="328.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="in progress">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Text layoutX="626.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="confirm &amp; pay" wrappingWidth="135.99998950958252">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Circle fill="#61a994" layoutX="589.0" layoutY="136.0" radius="20.0" stroke="WHITE" strokeType="INSIDE" />
+      <Text fill="#1e525b" layoutX="304.0" layoutY="281.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose payment method " wrappingWidth="396.0">
+         <font>
+            <Font name="System Bold Italic" size="19.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="paymentCombo" layoutX="526.0" layoutY="263.0" prefHeight="27.0" prefWidth="108.0" />
+      <ImageView fitHeight="27.0" fitWidth="68.0" layoutX="677.0" layoutY="264.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/cash.png" />
+         </image>
+      </ImageView>
+      <Text fill="RED" layoutX="364.0" layoutY="349.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price before Discount:">
+         <font>
+            <Font name="System Bold Italic" size="19.0" />
+         </font>
+      </Text>
+      <Text fill="#40c60f" layoutX="364.0" layoutY="389.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total price after Discount:">
+         <font>
+            <Font name="System Bold Italic" size="19.0" />
+         </font>
+      </Text>
+      <Text fx:id="priceBeforeDiscount" layoutX="609.0" layoutY="349.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="135.99998950958252">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="totalPrice" layoutX="609.0" layoutY="389.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="135.99998950958252">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Text>
+      <Line endX="-12.0" endY="-25.0" layoutX="740.0" layoutY="288.0" startX="-25.0" startY="-0.9999961853027344" stroke="#1e525b" strokeWidth="2.0" />
+      <Line disable="true" endX="120.0" layoutX="518.0" layoutY="321.0" startX="-175.0" stroke="#d9d9d9" strokeWidth="0.7" />
+      <Button id="sale" fx:id="finish" layoutX="643.0" layoutY="459.0" mnemonicParsing="false" onAction="#finishBtn" prefHeight="36.0" prefWidth="108.0" stylesheets="@../images/LoginButton.css" text="Finish">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Line disable="true" endX="120.0" layoutX="524.0" layoutY="402.0" startX="-175.0" stroke="#d9d9d9" strokeWidth="0.7" />
+      <ImageView fitHeight="27.0" fitWidth="68.0" layoutX="737.0" layoutY="263.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/visa.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="errorT" fill="RED" layoutX="410.0" layoutY="540.0" strokeType="OUTSIDE" strokeWidth="0.0" text="**please choose a payment method" visible="false" wrappingWidth="236.2124080657959">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Button id="Cancel" fx:id="cancel" layoutX="350.0" layoutY="459.0" mnemonicParsing="false" onAction="#cancelBtn" stylesheets="@../images/CancelButton.css" text="Cancel" />
+   </children>
+</AnchorPane>

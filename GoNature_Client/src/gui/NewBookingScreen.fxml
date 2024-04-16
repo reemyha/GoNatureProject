@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="800.0" style="-fx-border-color: #311906#311906; -fx-border-width: 6;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane layoutY="2.0" prefHeight="576.0" prefWidth="255.0" style="-fx-background-color: #1e525b; -fx-background-radius: 30 0 0 30;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox alignment="TOP_CENTER" layoutX="-1.0" layoutY="169.0" prefHeight="291.0" prefWidth="255.0" spacing="10.0">
+               <children>
+                  <Button fx:id="newBooking" disable="true" mnemonicParsing="false" onAction="#newBookingBtn" prefHeight="36.0" prefWidth="255.0" style="-fx-background-color: dff9e8;" text="New Booking">
+                     <font>
+                        <Font name="System Bold Italic" size="17.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="myBooking" mnemonicParsing="false" onAction="#myBookingBtn" prefHeight="36.0" prefWidth="255.0" style="-fx-background-color: dff9e8;" text="My Bookings">
+                     <font>
+                        <Font name="System Bold Italic" size="17.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="prices" mnemonicParsing="false" onAction="#pricesBtn" prefHeight="36.0" prefWidth="255.0" style="-fx-background-color: dff9e8;" text="Prices">
+                     <font>
+                        <Font name="System Bold Italic" size="17.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="aboutUs" mnemonicParsing="false" onAction="#aboutUsBtn" prefHeight="36.0" prefWidth="255.0" style="-fx-background-color: dff9e8;" text="About Us">
+                     <font>
+                        <Font name="System Bold Italic" size="17.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <Text fill="#dff9e8" layoutX="21.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Go Nature">
+               <font>
+                  <Font name="System Bold Italic" size="45.0" />
+               </font>
+            </Text>
+            <Button id="Logout" fx:id="logout" layoutX="59.0" layoutY="515.0" mnemonicParsing="false" onAction="#logoutBtn" prefHeight="36.0" prefWidth="136.0" stylesheets="@../images/LogOutButton.css" text="Logout">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Separator layoutX="261.0" layoutY="99.0" opacity="0.5" prefHeight="5.0" prefWidth="385.0" style="-fx-background-color: #242633;" AnchorPane.leftAnchor="255.0" AnchorPane.rightAnchor="0.0" />
+      <Text fill="#1e525b" layoutX="390.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New Booking">
+         <font>
+            <Font name="System Bold Italic" size="44.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="328.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/forest.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="691.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/forest.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="322.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Park name:" wrappingWidth="143.99999380111694">
+         <font>
+            <Font name="Futura Bold" size="21.0" />
+         </font>
+      </Text>
+      <Text layoutX="324.0" layoutY="345.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date &amp; Time:" wrappingWidth="129.99999523162842">
+         <font>
+            <Font name="Futura Bold" size="21.0" />
+         </font>
+      </Text>
+      <Text layoutX="322.0" layoutY="292.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number of visitors:" wrappingWidth="242.20350456237793">
+         <font>
+            <Font name="Futura Bold" size="21.0" />
+         </font>
+      </Text>
+      <Text layoutX="322.0" layoutY="399.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email:" wrappingWidth="75.20350456237793">
+         <font>
+            <Font name="Futura Bold" size="21.0" />
+         </font>
+      </Text>
+      <Text layoutX="326.0" layoutY="453.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telephone:" wrappingWidth="108.20350456237793">
+         <font>
+            <Font name="Futura Bold" size="21.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="15.0" fitWidth="15.0" layoutX="324.0" layoutY="425.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" x="295.0" y="10.0">
+         <image>
+            <Image url="@../images/telephone.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="telephoneT" layoutX="430.0" layoutY="429.0" promptText="054-123-456" />
+      <ComboBox fx:id="parkNameCombo" layoutX="443.0" layoutY="206.0" prefWidth="150.0" promptText="select" />
+      <ImageView fitHeight="20.0" fitWidth="22.0" layoutX="611.0" layoutY="271.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/users.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="15.0" fitWidth="15.0" layoutX="582.0" layoutY="384.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/mail.png" />
+         </image>
+      </ImageView>
+      <Circle fill="#61a994" layoutX="459.0" layoutY="135.0" radius="20.0" stroke="WHITE" strokeType="INSIDE" />
+      <Circle fill="WHITE" layoutX="585.0" layoutY="135.0" radius="18.0" stroke="#00e1ff" strokeType="INSIDE" />
+      <Line endX="63.0" endY="-0.9999961853027344" layoutX="505.0" layoutY="136.0" startX="-25.0" startY="-0.9999961853027344" stroke="#1e525b" />
+      <Text layoutX="328.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="in progress">
+         <font>
+            <Font size="21.0" />
+         </font></Text>
+      <Text layoutX="611.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="confirm &amp; pay">
+         <font>
+            <Font size="21.0" />
+         </font></Text>
+      <Button id="sale" fx:id="next" layoutX="665.0" layoutY="515.0" mnemonicParsing="false" onAction="#nextBtn" prefHeight="36.0" prefWidth="108.0" stylesheets="@../images/LoginButton.css" text="next">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <TextField fx:id="emailT" layoutX="386.0" layoutY="373.0" promptText="example@example.com" />
+      <DatePicker fx:id="dateCombo" layoutX="450.0" layoutY="319.0" prefHeight="31.0" prefWidth="196.0" />
+      <ComboBox fx:id="timeCombo" layoutX="658.0" layoutY="319.0" prefHeight="31.0" prefWidth="95.0" />
+      <ComboBox fx:id="numOfVisitorsCombo" layoutX="508.0" layoutY="266.0" prefHeight="31.0" prefWidth="95.0" />
+      <CheckBox fx:id="guide" layoutX="661.0" layoutY="271.0" mnemonicParsing="false" onAction="#guideCB" prefHeight="21.0" prefWidth="89.0" text="Guide" />
+      <ComboBox fx:id="numOfVisitorsGCombo" disable="true" layoutX="508.0" layoutY="266.0" prefHeight="31.0" prefWidth="95.0" visible="false" />
+      <ImageView fitHeight="87.0" fitWidth="130.0" layoutX="65.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/GoNatureLogoGB.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

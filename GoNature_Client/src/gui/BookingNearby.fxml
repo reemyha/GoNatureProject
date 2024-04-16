@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="450.0" style="-fx-background-color: F5F5F5; -fx-border-width: 6; -fx-border-radius: 30 30 30 30; -fx-border-color: #311906#311906; -fx-background-radius: 30 30 30 30;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Line disable="true" endX="120.0" layoutX="252.0" layoutY="335.0" startX="-175.0" stroke="#d9d9d9" strokeWidth="0.7" />
+      <Button id="sale" fx:id="confirm" disable="true" layoutX="272.0" layoutY="345.0" mnemonicParsing="false" onAction="#ConfirmBtn" prefHeight="35.0" prefWidth="90.0" stylesheets="@../images/LoginButton.css" text="Confirm">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Line disable="true" endX="120.0" layoutX="252.0" layoutY="403.0" startX="-175.0" stroke="#d9d9d9" strokeWidth="0.7" />
+      <Button id="Cancel" fx:id="cancel" disable="true" layoutX="84.0" layoutY="346.0" mnemonicParsing="false" onAction="#cancelBtn" stylesheets="@../images/CancelButton.css" text="Cancel" />
+      <Text fill="#1e525b" layoutX="14.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Booking Nearby" textAlignment="CENTER" wrappingWidth="313.0">
+         <font>
+            <Font name="System Bold Italic" size="30.0" />
+         </font>
+      </Text>
+      <Line disable="true" endX="120.0" layoutX="241.0" layoutY="78.0" startX="-175.0" stroke="#d9d9d9" strokeWidth="0.7" />
+      <Text fill="#128fa8" layoutX="38.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Arrival information:" wrappingWidth="220.10302734375">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <TableView fx:id="BookingTable" layoutX="38.0" layoutY="118.0" prefHeight="171.0" prefWidth="381.0">
+        <columns>
+          <TableColumn fx:id="Bookingnumber" prefWidth="103.0" text="Booking Number" />
+          <TableColumn fx:id="ParkName" prefWidth="132.0" text="Park Name" />
+            <TableColumn fx:id="DateAndTime" prefWidth="145.0" text="Date And Time" />
+        </columns>
+      </TableView>
+      <Text fill="RED" layoutX="8.0" layoutY="319.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Order that wont be Confirmd in 2 Hours will be Canceled!">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="800.0" style="-fx-border-color: #311906#311906; -fx-background-color: F5F5F5; -fx-border-width: 6;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane layoutY="2.0" prefHeight="576.0" prefWidth="255.0" style="-fx-background-color: #1e525b; -fx-background-radius: 30 0 0 30;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox alignment="TOP_CENTER" layoutX="-1.0" layoutY="169.0" prefHeight="291.0" prefWidth="255.0" spacing="10.0">
+               <children>
+                  <Button fx:id="newBooking" mnemonicParsing="false" onAction="#newBookingBtn" prefHeight="36.0" prefWidth="255.0" style="-fx-background-color: dff9e8;" text="New Booking">
+                     <font>
+                        <Font name="System Bold Italic" size="17.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="myBooking" mnemonicParsing="false" onAction="#myBookingBtn" prefHeight="36.0" prefWidth="255.0" style="-fx-background-color: dff9e8;" text="My Bookings">
+                     <font>
+                        <Font name="System Bold Italic" size="17.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="prices" mnemonicParsing="false" onAction="#pricesBtn" prefHeight="36.0" prefWidth="255.0" style="-fx-background-color: dff9e8;" text="Prices">
+                     <font>
+                        <Font name="System Bold Italic" size="17.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="aboutUs" disable="true" mnemonicParsing="false" onAction="#aboutUsBtn" prefHeight="36.0" prefWidth="255.0" style="-fx-background-color: dff9e8;" text="About Us">
+                     <font>
+                        <Font name="System Bold Italic" size="17.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <Text fill="#dff9e8" layoutX="21.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Go Nature">
+               <font>
+                  <Font name="System Bold Italic" size="45.0" />
+               </font>
+            </Text>
+            <Button fx:id="logout" layoutX="59.0" layoutY="485.0" mnemonicParsing="false" onAction="#logoutBtn" prefHeight="36.0" prefWidth="136.0" style="-fx-background-color: #FFC152; -fx-background-radius: 10 10 10 10;" text="Logout">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="80.0" fitWidth="140.0" layoutX="65.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/GoNatureLogoGB.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="379.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/forest.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="643.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/forest.png" />
+         </image>
+      </ImageView>
+      <ComboBox fx:id="numOfVisitorsGCombo" disable="true" layoutX="508.0" layoutY="266.0" prefHeight="31.0" prefWidth="95.0" visible="false" />
+      <Text fill="#1e525b" layoutX="449.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="About us">
+         <font>
+            <Font name="System Bold Italic" size="44.0" />
+         </font>
+      </Text>
+      <Text fill="#128fa8" layoutX="283.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Important things that you should know before visiting our site" textAlignment="CENTER" wrappingWidth="358.47265625">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Text>
+      <Line disable="true" endX="307.0" layoutX="463.0" layoutY="147.0" startX="-175.0" stroke="#d9d9d9" strokeWidth="4.0" />
+      <Text fill="#1e525b" layoutX="296.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Activity time:">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Text>
+      <Text fill="#1e525b" layoutX="432.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="8:00-16:00">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Text>
+      <Line disable="true" endX="302.0" layoutX="467.0" layoutY="239.0" startX="-175.0" stroke="#d9d9d9" strokeWidth="4.0" />
+      <Text fill="#1e525b" layoutX="288.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Entry with animals is allowed">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Text>
+      <ImageView blendMode="MULTIPLY" fitHeight="125.0" fitWidth="150.0" layoutX="279.0" layoutY="397.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/BlackForest.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView blendMode="MULTIPLY" fitHeight="125.0" fitWidth="150.0" layoutX="451.0" layoutY="397.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Hyde%20Park.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView blendMode="MULTIPLY" fitHeight="125.0" fitWidth="150.0" layoutX="632.0" layoutY="397.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/YellowStone%20Park.jpeg" />
+         </image>
+      </ImageView>
+      <Text fill="#128fa8" layoutX="262.0" layoutY="526.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Baden-Württemberg,Ramat gan" textAlignment="CENTER" wrappingWidth="182.87500016391277">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#128fa8" layoutX="469.0" layoutY="526.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Westminster,Petah tikva" textAlignment="CENTER" wrappingWidth="114.7982127070427">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#128fa8" layoutX="656.0" layoutY="526.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wyoming,Karmiel" textAlignment="CENTER" wrappingWidth="94.99999906122684">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#1e525b" layoutX="275.0" layoutY="301.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Our parks and arrival instructions:">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Text>
+      <ImageView blendMode="MULTIPLY" fitWidth="130.0" layoutX="288.0" layoutY="302.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/blackforet.png" />
+         </image>
+      </ImageView>
+      <ImageView blendMode="MULTIPLY" fitWidth="130.0" layoutX="457.0" layoutY="303.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/hydepark.png" />
+         </image>
+      </ImageView>
+      <ImageView blendMode="MULTIPLY" fitWidth="130.0" layoutX="642.0" layoutY="308.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/yellowstone.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="614.0" layoutY="152.0" prefHeight="21.0" prefWidth="200.0" text="Do not harm or feed the animals" />
+      <Label layoutX="614.0" layoutY="182.0" prefHeight="21.0" prefWidth="200.0" text="Take your trash with you" />
+      <Label layoutX="614.0" layoutY="212.0" prefHeight="21.0" prefWidth="200.0" text="Enjoy your time here" textFill="#0b0101" />
+      <Label layoutX="605.0" layoutY="156.0" text="*" textFill="RED" />
+      <Label layoutX="605.0" layoutY="186.0" text="*" textFill="RED" />
+      <Label layoutX="605.0" layoutY="216.0" text="*" textFill="RED" />
+   </children>
+</AnchorPane>

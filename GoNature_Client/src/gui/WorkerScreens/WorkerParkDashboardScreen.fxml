@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1050.0" style="-fx-border-color: #311906#311906; -fx-border-width: 6;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+	<children>
+		<Pane layoutY="2.0" prefHeight="576.0" prefWidth="255.0" style="-fx-background-color: #1e525b; -fx-background-radius: 30 0 0 30;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+			<children>
+				<VBox alignment="TOP_CENTER" layoutX="-1.0" layoutY="169.0" prefHeight="291.0" prefWidth="255.0" spacing="10.0">
+					<children>
+						<Button disable="true" mnemonicParsing="false" prefHeight="36.0" prefWidth="255.0" style="-fx-background-color: dff9e8;" text="Worker Park Dashboard">
+							<font>
+								<Font name="System Bold Italic" size="17.0" />
+							</font>
+						</Button>
+					</children>
+				</VBox>
+				<Text fill="#dff9e8" layoutX="21.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Go Nature">
+					<font>
+						<Font name="System Bold Italic" size="45.0" />
+					</font>
+				</Text>
+				<Button fx:id="logout" layoutX="59.0" layoutY="631.0" mnemonicParsing="false" onAction="#logoutBtn" prefHeight="36.0" prefWidth="136.0" style="-fx-background-color: #FFC152; -fx-background-radius: 10 10 10 10;" text="Logout">
+					<font>
+						<Font name="System Bold" size="14.0" />
+					</font>
+				</Button>
+			</children>
+		</Pane>
+		<Text fill="#1e525b" layoutX="410.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Worker Park Dashboard" wrappingWidth="509.0">
+			<font>
+				<Font name="System Bold Italic" size="44.0" />
+			</font>
+		</Text>
+      <Separator layoutX="261.0" layoutY="94.0" opacity="0.5" prefHeight="6.0" prefWidth="793.0" style="-fx-background-color: #242633;" />
+      <Text fx:id="workerNameT" fill="#1e525b" layoutX="276.0" layoutY="128.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="289.6708984375">
+         <font>
+            <Font name="System Bold Italic" size="19.0" />
+         </font>
+      </Text>
+      <Separator layoutX="665.0" layoutY="97.0" orientation="VERTICAL" prefHeight="468.0" prefWidth="4.0" style="-fx-background-color: #242633;" />
+      <Text fill="#1e525b" layoutX="748.0" layoutY="317.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Booking Details">
+         <font>
+            <Font name="System Bold Italic" size="32.0" />
+         </font>
+      </Text>
+      <Text fill="#61a994" layoutX="690.0" layoutY="354.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Booking Number:" wrappingWidth="144.99999636411667">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Text>
+      <Text fill="#61a994" layoutX="691.0" layoutY="398.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Park Name:" wrappingWidth="126.99999636411667">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Text>
+      <Text fill="#61a994" layoutX="691.0" layoutY="445.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date and Time:" wrappingWidth="126.99999636411667">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Text>
+      <Text fill="#61a994" layoutX="691.0" layoutY="493.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Visit Type:" wrappingWidth="126.99999636411667">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Text>
+      <Text fill="#61a994" layoutX="691.0" layoutY="535.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number of Visitors:" wrappingWidth="155.99999636411667">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="orderNumberT" layoutX="855.0" layoutY="353.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="177.6708984375">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="parkNameT" layoutX="851.0" layoutY="397.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="185.6708984375">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="dateT" layoutX="851.0" layoutY="444.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="185.6708984375">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="visitTypeT" layoutX="851.0" layoutY="492.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="185.6708984375">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="numOfVisitorsT" layoutX="851.0" layoutY="534.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="185.6708984375">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Text>
+      <Separator layoutX="260.0" layoutY="561.0" opacity="0.5" prefHeight="6.0" prefWidth="793.0" style="-fx-background-color: #242633;" />
+      <Text fx:id="visitorsInParkT" fill="#1e525b" layoutX="279.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="248.67090190947056">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="visitorsT" layoutX="531.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="127.00000193715096">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Text>
+      <CheckBox fx:id="enterCheck" disable="true" layoutX="797.0" layoutY="610.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="77.0" text="Enter" textFill="#0aa412">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="exitCheck" disable="true" layoutX="797.0" layoutY="649.0" mnemonicParsing="false" text="Exit" textFill="#f80606">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </CheckBox>
+      <Button fx:id="payment" disable="true" layoutX="901.0" layoutY="591.0" mnemonicParsing="false" onAction="#paymentBtn" prefHeight="36.0" prefWidth="136.0" style="-fx-background-color: #FFC152; -fx-background-radius: 10 10 10 10;" text="Payment">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="approve" disable="true" layoutX="901.0" layoutY="645.0" mnemonicParsing="false" onAction="#approveBtn" prefHeight="36.0" prefWidth="136.0" style="-fx-background-color: #FFC152; -fx-background-radius: 10 10 10 10;" text="Approve">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Text fill="#1e525b" layoutX="732.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Booking Number" wrappingWidth="271.67089891433716">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Text>
+      <TextField fx:id="checkOrderT" layoutX="767.0" layoutY="167.0" />
+      <Button fx:id="checkOrder" disable="true" layoutX="868.0" layoutY="218.0" mnemonicParsing="false" onAction="#checkOrderBtn" prefHeight="36.0" prefWidth="136.0" style="-fx-background-color: #FFC152; -fx-background-radius: 10 10 10 10;" text="Check Order">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Text fx:id="errorT" fill="RED" layoutX="739.0" layoutY="277.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="255.00000143359648" />
+      <Separator layoutX="261.0" layoutY="182.0" opacity="0.5" prefHeight="6.0" prefWidth="403.0" style="-fx-background-color: #242633;" />
+      <Text fill="#1e525b" layoutX="327.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Occasional Visitor">
+         <font>
+            <Font name="System Bold Italic" size="32.0" />
+         </font>
+      </Text>
+      <Text fx:id="occasionalVisitNumT" fill="#61a994" layoutX="276.0" layoutY="492.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number of Visitors:" visible="false" wrappingWidth="155.99999636411667">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Text>
+      <Text fill="#61a994" layoutX="327.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Visitor ID:" wrappingWidth="93.99999636411667">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Text>
+      <TextField fx:id="visitorID" layoutX="421.0" layoutY="256.0" />
+      <Button fx:id="checkID" disable="true" layoutX="472.0" layoutY="307.0" mnemonicParsing="false" onAction="#checkIDBtn" prefHeight="36.0" prefWidth="136.0" style="-fx-background-color: #FFC152; -fx-background-radius: 10 10 10 10;" text="Check ID">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="clearDetails1" layoutX="313.0" layoutY="307.0" mnemonicParsing="false" onAction="#clearDetails1Btn" prefHeight="36.0" prefWidth="136.0" style="-fx-background-color: #FFC152; -fx-background-radius: 10 10 10 10;" text="Clear Details">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="visitorCombo" layoutX="443.0" layoutY="470.0" prefHeight="31.0" prefWidth="105.0" visible="false" />
+      <CheckBox fx:id="groupGuide" layoutX="276.0" layoutY="354.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="127.0" text="Group Guide" visible="false" />
+      <ComboBox fx:id="groupCombo" layoutX="443.0" layoutY="469.0" prefHeight="31.0" prefWidth="105.0" visible="false" />
+      <Text fx:id="dateTime" fill="#61a994" layoutX="278.0" layoutY="444.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date &amp; Time:" visible="false" wrappingWidth="111.9999882131815">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Text>
+      <Button fx:id="clearDetails" layoutX="711.0" layoutY="218.0" mnemonicParsing="false" onAction="#clearDetailsBtn" prefHeight="36.0" prefWidth="136.0" style="-fx-background-color: #FFC152; -fx-background-radius: 10 10 10 10;" text="Clear Details">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Text fill="#61a994" layoutX="276.0" layoutY="616.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price:" wrappingWidth="58.00000262260437">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Text>
+      <Text fill="#61a994" layoutX="276.0" layoutY="651.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Price:" wrappingWidth="93.9999882131815">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="priceT" fill="#00a811" layoutX="378.0" layoutY="616.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="169.6708984375">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="totalPriceT" fill="#f81f1f" layoutX="378.0" layoutY="651.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="169.6708984375">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="error" fill="#d70a0a" layoutX="677.0" layoutY="597.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="bookingNumber" fill="#61a994" layoutX="282.0" layoutY="408.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Booking Number:" visible="false" wrappingWidth="144.99999845027924">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="bookingNumberT" layoutX="443.0" layoutY="407.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" visible="false" wrappingWidth="224.0000101327896">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="dateTimeT" layoutX="443.0" layoutY="444.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" visible="false" wrappingWidth="217.96875369548798">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+	</children>
+</AnchorPane>

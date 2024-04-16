@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1050.0" style="-fx-border-color: #311906#311906; -fx-border-width: 6;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane layoutY="2.0" prefHeight="576.0" prefWidth="255.0" style="-fx-background-color: #1e525b; -fx-background-radius: 30 0 0 30;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox alignment="TOP_CENTER" layoutX="-1.0" layoutY="169.0" prefHeight="291.0" prefWidth="255.0" spacing="10.0">
+               <children>
+                  <Button fx:id="DparkDashboard" disable="true" mnemonicParsing="false" onAction="#DMDashboardBtn" prefHeight="36.0" prefWidth="255.0" style="-fx-background-color: dff9e8;" text="Dashboard">
+                     <font>
+                        <Font name="System Bold Italic" size="17.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="28.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/dash.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="parksVisitsReport" mnemonicParsing="false" onAction="#VisitsReportBtn" prefHeight="36.0" prefWidth="255.0" style="-fx-background-color: dff9e8;" text="Park's Visits Report">
+                     <font>
+                        <Font name="System Bold Italic" size="17.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="28.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/stats.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="cancellationReport" mnemonicParsing="false" onAction="#cancellationReportBtn" prefHeight="36.0" prefWidth="255.0" style="-fx-background-color: dff9e8;" text="Cancellation Report">
+                     <font>
+                        <Font name="System Bold Italic" size="17.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="28.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/report.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </VBox>
+            <Text fill="#dff9e8" layoutX="21.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Go Nature">
+               <font>
+                  <Font name="System Bold Italic" size="45.0" />
+               </font>
+            </Text>
+            <Button fx:id="logout" layoutX="56.0" layoutY="610.0" mnemonicParsing="false" onAction="#logoutBtn" prefHeight="36.0" prefWidth="136.0" style="-fx-background-color: #FFC152; -fx-background-radius: 10 10 10 10;" text="Logout">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutX="322.0" layoutY="377.0" prefHeight="256.0" prefWidth="642.0">
+         <children>
+            <TableView fx:id="requestTable" editable="true" layoutY="-1.0" prefHeight="271.0" prefWidth="642.0">
+              <columns>
+                <TableColumn fx:id="requestNumber" prefWidth="146.0" text="Request Number" />
+                <TableColumn fx:id="changes" prefWidth="497.0" text="Changes" />
+              </columns>
+            </TableView>
+         </children>
+      </Pane>
+      <Pane layoutX="322.0" layoutY="144.0" prefHeight="175.0" prefWidth="642.0">
+         <children>
+            <TableView fx:id="reportTable" layoutY="-3.0" prefHeight="187.0" prefWidth="642.0">
+              <columns>
+                <TableColumn fx:id="reportId" prefWidth="100.0" text="Report ID" />
+                  <TableColumn fx:id="parkName" prefWidth="166.0" text="Park Name" />
+                <TableColumn fx:id="fromC" prefWidth="193.0" text="From" />
+                  <TableColumn fx:id="toC" prefWidth="166.0" text="To" />
+              </columns>
+            </TableView>
+         </children>
+      </Pane>
+      <ComboBox fx:id="reportComboBox" layoutX="574.0" layoutY="100.0" onAction="#reportComboBoxChange" prefWidth="150.0" />
+      <Pane layoutX="65.0" layoutY="84.0" prefHeight="85.0" prefWidth="144.0">
+         <children>
+            <ImageView fitHeight="85.0" fitWidth="136.0" layoutX="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/GoNatureLogoGB.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Button fx:id="confirmChanges" layoutX="854.0" layoutY="650.0" mnemonicParsing="false" onAction="#confirmChangesBtn" style="-fx-background-color: #FFC152; -fx-background-radius: 10 10 10 10;" text="Confirm Changes" />
+      <Button layoutX="303.0" layoutY="644.0" mnemonicParsing="false" onAction="#refreshBtn" prefHeight="36.0" prefWidth="84.0" text="Refresh" textAlignment="CENTER" textFill="#0e1422" wrapText="true" />
+      <Text layoutX="479.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select Report : " wrappingWidth="126.60205078125" />
+      <Button fx:id="downloadReport" disable="true" layoutX="649.0" layoutY="335.0" mnemonicParsing="false" onAction="#downloadReportBtn" text="Download Report" />
+      <Button layoutX="606.0" layoutY="335.0" mnemonicParsing="false" onAction="#handleChooseDirectory" prefHeight="0.0" prefWidth="24.0" text="..." />
+      <TextField fx:id="directoryTextField" layoutX="322.0" layoutY="335.0" prefHeight="31.0" prefWidth="275.0" />
+      <Text fill="#1e525b" layoutX="277.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="System Bold Italic" size="44.0" />
+         </font>
+      </Text>
+      <Pane layoutX="336.0" layoutY="22.0" prefHeight="60.0" prefWidth="593.0" style="-fx-background-color: #1e525b; -fx-background-radius: 68;">
+         <children>
+            <Text fx:id="welcomebackt" fill="#ecfcff" layoutX="43.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="welcome back " textAlignment="CENTER" wrappingWidth="529.365234375">
+               <font>
+                  <Font name="System Bold Italic" size="44.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="59.0" fitWidth="90.0" layoutX="482.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/hello.png" />
+               </image>
+            </ImageView>
+         </children>
+         <cursor>
+            <Cursor fx:constant="SW_RESIZE" />
+         </cursor>
+      </Pane>
+      <Line endX="-266.0" endY="425.5" layoutX="535.0" layoutY="259.0" startX="-266.0" startY="-242.0" />
+      <Line endX="514.0" layoutX="517.0" layoutY="686.0" startX="-249.0" />
+      <Line endX="-258.5" endY="412.5" layoutX="1290.0" layoutY="273.0" startX="-258.29296875" startY="-259.70709228515625" />
+      <Line endX="543.0" endY="1.0000152587890625" layoutX="488.0" layoutY="14.0" startX="-220.0" />
+      <ImageView fitHeight="48.0" fitWidth="60.0" layoutX="738.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/forestline.png" />
+         </image>
+      </ImageView>
+      <Line endX="516.0" layoutX="515.0" layoutY="92.0" startX="-245.5" stroke="#ffc152" strokeWidth="5.0" />
+      <Text fx:id="errortxt" layoutX="820.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="error" visible="false" wrappingWidth="177.99999564886093" />
+      <Button fx:id="denyChanges" layoutX="729.0" layoutY="650.0" mnemonicParsing="false" onAction="#denyChangesBtn" style="-fx-background-color: #FFC152; -fx-background-radius: 10 10 10 10;" text="Deny Changes" />
+   </children>
+</AnchorPane>

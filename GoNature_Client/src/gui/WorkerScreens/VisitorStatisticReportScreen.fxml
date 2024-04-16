@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1050.0" style="-fx-border-color: #311906#311906; -fx-border-width: 6;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+	<children>
+		<Pane layoutY="2.0" prefHeight="576.0" prefWidth="255.0" style="-fx-background-color: #1e525b; -fx-background-radius: 30 0 0 30;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+			<children>
+				<VBox alignment="TOP_CENTER" layoutX="-1.0" layoutY="169.0" prefHeight="291.0" prefWidth="255.0" spacing="10.0">
+					<children>
+						<Button fx:id="parkDashboard" mnemonicParsing="false" onAction="#DashboardBtn" prefHeight="36.0" prefWidth="255.0" style="-fx-background-color: dff9e8;" text="Park Dashboard">
+							<font>
+								<Font name="System Bold Italic" size="17.0" />
+							</font>
+                     <graphic>
+                        <ImageView fitHeight="28.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/dash.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+						</Button>
+						<Button fx:id="visitorStatisticReport" disable="true" mnemonicParsing="false" onAction="#VisitorStatisticReportBtn" prefHeight="36.0" prefWidth="255.0" style="-fx-background-color: dff9e8;" text="Visitor Statistic Report">
+							<font>
+								<Font name="System Bold Italic" size="17.0" />
+							</font>
+                     <graphic>
+                        <ImageView fitHeight="28.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/stats.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+						</Button>
+						<Button fx:id="parkAvailabilityReport" mnemonicParsing="false" onAction="#availabilityReportBtn" prefHeight="36.0" prefWidth="255.0" style="-fx-background-color: dff9e8;" text="Park Availability Report">
+							<font>
+								<Font name="System Bold Italic" size="17.0" />
+							</font>
+                     <graphic>
+                        <ImageView fitHeight="28.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/report.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+						</Button>
+					</children>
+				</VBox>
+				<Text fill="#dff9e8" layoutX="21.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Go Nature">
+					<font>
+						<Font name="System Bold Italic" size="45.0" />
+					</font>
+				</Text>
+            <Pane layoutX="58.0" layoutY="74.0" prefHeight="85.0" prefWidth="144.0">
+               <children>
+                  <ImageView fitHeight="85.0" fitWidth="136.0" layoutX="11.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/GoNatureLogoGB.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+			</children>
+		</Pane>
+		<BarChart fx:id="visitorChart" layoutX="271.0" layoutY="192.0" prefHeight="370.0" prefWidth="736.0">
+			<xAxis>
+				<CategoryAxis endMargin="10.0" label="day " prefHeight="58.0" prefWidth="650.0" side="BOTTOM" tickLabelRotation="4.4" tickLength="10.0" fx:id="xAxisR">
+               <tickLabelFont>
+                  <Font size="18.0" />
+               </tickLabelFont></CategoryAxis>
+			</xAxis>
+			<yAxis>
+				<NumberAxis fx:id="yAxisR" label="Visits tally" side="LEFT" />
+			</yAxis>
+		</BarChart>
+		<Text layoutX="285.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="from:" wrappingWidth="123.99999380111694">
+			<font>
+				<Font name="Futura Bold" size="21.0" />
+			</font>
+		</Text>
+		<Text layoutX="607.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="to:" wrappingWidth="143.99999380111694">
+			<font>
+				<Font name="Futura Bold" size="21.0" />
+			</font>
+		</Text>
+		<DatePicker fx:id="FromDate" layoutX="343.0" layoutY="114.0" prefHeight="31.0" prefWidth="178.0" />
+		<DatePicker fx:id="ToDate" layoutX="641.0" layoutY="114.0" prefHeight="31.0" prefWidth="188.0" />
+		<Button fx:id="Show" layoutX="949.0" layoutY="113.0" mnemonicParsing="false" onAction="#showBtn" prefHeight="31.0" prefWidth="69.0" text="Show" />
+		<Label fx:id="Totalvisitortxt" layoutX="282.0" layoutY="556.0" prefHeight="40.0" prefWidth="486.0" text="Total visitors:">
+			<font>
+				<Font name="Arial Bold" size="21.0" />
+			</font>
+		</Label>
+		<Button fx:id="BackBtn" layoutX="943.0" layoutY="576.0" mnemonicParsing="false" onAction="#backBtn" prefHeight="8.0" prefWidth="81.0" style="-fx-background-color: #FFC152; -fx-background-radius: 10;" text="Clear">
+		<font>
+		<Font name="System Bold" size="14.0" />
+		</font>
+	</Button>
+      <Button fx:id="sendReportToSystem" disable="true" layoutX="705.0" layoutY="612.0" mnemonicParsing="false" onAction="#sendReportToSystemBtn" prefHeight="31.0" prefWidth="196.0" text="Send Report To System">
+         <effect>
+            <InnerShadow choke="0.15" color="#8d7d7d" height="30.0" radius="14.5" width="30.0" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Text fx:id="msgToUser" layoutX="367.0" layoutY="649.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="367.9999910891056" />
+      <TextField fx:id="directoryTextField" layoutX="285.0" layoutY="612.0" prefHeight="25.0" prefWidth="368.0" />
+      <Button layoutX="662.0" layoutY="612.0" mnemonicParsing="false" onAction="#handleChooseDirectory" prefHeight="0.0" prefWidth="7.0" text="..." />
+      <Pane layoutX="-268.0" layoutY="183.0" prefHeight="23.0" prefWidth="30.0" />
+      <Button fx:id="logout" layoutX="72.0" layoutY="604.0" mnemonicParsing="false" onAction="#logoutBtn" prefHeight="36.0" prefWidth="136.0" style="-fx-background-color: #FFC152; -fx-background-radius: 10;" text="Logout">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+     <Pane layoutX="336.0" layoutY="22.0" prefHeight="60.0" prefWidth="593.0" style="-fx-background-color: #1e525b; -fx-background-radius: 68;">
+
+         <children>
+      		<Text fill="#ecfcff" layoutX="42.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="visitor statistic numbers" textAlignment="CENTER" wrappingWidth="529.365234375">
+      			<font>
+      				<Font name="System Bold Italic" size="44.0" />
+      			</font>
+      		</Text>
+         </children>
+         <cursor>
+            <Cursor fx:constant="SW_RESIZE" />
+         </cursor>
+      </Pane>
+      <Line endX="-266.0" endY="425.5" layoutX="537.0" layoutY="255.0" startX="-266.0" startY="-242.0" />
+      <Line endX="514.0" layoutX="521.0" layoutY="681.0" startX="-249.0" />
+      <Line endX="-258.5" endY="412.5" layoutX="1294.0" layoutY="268.0" startX="-258.5" startY="-252.5" />
+      <Line endX="543.0" endY="1.0000152587890625" layoutX="492.0" layoutY="14.0" startX="-220.0" />
+      <Line endX="512.0" layoutX="520.0" layoutY="94.0" startX="-249.5" stroke="#cd8d1f" strokeWidth="5.0" />
+      <ImageView fitHeight="40.0" fitWidth="63.0" layoutX="525.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/Screenshot%202024-03-31%20150207.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="63.0" layoutX="840.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/Screenshot%202024-03-31%20150207.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="errortxt" layoutX="406.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="error" visible="false" wrappingWidth="469.99999564886093" />
+      <Line endX="508.0" layoutX="528.0" layoutY="96.0" startX="-258.5" stroke="#ffc152" strokeWidth="5.0" />
+	</children>
+</AnchorPane>
